@@ -1,7 +1,7 @@
 package stepDefinitions;
 
 import io.cucumber.java.en.Then;
-import org.testng.Assert;
+import org.testng.*;
 import pageObjects.LandingPage;
 import pageObjects.OfferPage;
 import pageObjects.PageObjectManager;

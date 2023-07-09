@@ -1,6 +1,6 @@
 package stepDefinitions;
 import io.cucumber.java.en.Then;
-import org.testng.Assert;
+import org.testng.*;
 import pageObjects.CheckOutPage;
 import utils.TestContextSetup;
 
@@ -21,6 +21,6 @@ public CheckOutPageStepDefination(TestContextSetup testContextSetup){
 
     @Then("^user proceeds to Checkout and validate the (.+) items in checkout page$")
     public void User_proceeds_to_Checkout_and_validate_the_items_in_checkout_page(String name) throws InterruptedException {
-checkOutPage.CheckOutItems();
+    checkOutPage.CheckOutItems();
     }
     }

@@ -1,6 +1,8 @@
 package utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -15,13 +17,22 @@ public class TestBase {
         Properties properties = new Properties();
         properties.load(fileInputStream);
         String url = properties.getProperty("QAurl");
+        String  browser_property = properties.getProperty("browser");
+        String  system_property = System.getProperty("browser");
+        String  browser =system_property!=null ? system_property : browser_property;
+        
         if(webDriver == null){
-            if(properties.getProperty("browser").equalsIgnoreCase("Chrome")){
-                webDriver = new ChromeDriver();
+        	
+            if(browser.equalsIgnoreCase("Chrome")){
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("--remote-allow-origins=*");
+                webDriver = new ChromeDriver(options);
                 webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
             }
-            if (properties.getProperty("browser").equalsIgnoreCase("Firefox")) {
-                System.out.println("code for firfox");
+            if (browser.equalsIgnoreCase("firefox")){
+            	
+                webDriver = new FirefoxDriver();
+                webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
             }
             webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
             webDriver.get(url);

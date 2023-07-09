@@ -1,0 +1,30 @@
+<component name="libraryTable">
+  <library name="jboss.arquillian.testng.container" type="repository">
+    <properties maven-id="org.jboss.arquillian.testng:arquillian-testng-container:1.7.0.Alpha6" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/arquillian-testng-container-1.7.0.Alpha6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/arquillian-testng-core-1.7.0.Alpha6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/arquillian-test-api-1.7.0.Alpha6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/arquillian-core-api-1.7.0.Alpha6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/arquillian-test-spi-1.7.0.Alpha6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/arquillian-core-spi-1.7.0.Alpha6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/arquillian-container-test-api-1.7.0.Alpha6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/shrinkwrap-api-1.2.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/shrinkwrap-descriptors-api-base-2.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/arquillian-container-test-spi-1.7.0.Alpha6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/arquillian-container-spi-1.7.0.Alpha6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/arquillian-core-impl-base-1.7.0.Alpha6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/arquillian-test-impl-base-1.7.0.Alpha6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/arquillian-container-impl-base-1.7.0.Alpha6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/arquillian-config-api-1.7.0.Alpha6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/arquillian-config-impl-base-1.7.0.Alpha6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/arquillian-config-spi-1.7.0.Alpha6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/shrinkwrap-descriptors-spi-2.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/arquillian-container-test-impl-base-1.7.0.Alpha6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/shrinkwrap-impl-base-1.2.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/shrinkwrap-spi-1.2.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

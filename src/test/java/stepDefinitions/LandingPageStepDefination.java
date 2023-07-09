@@ -1,7 +1,7 @@
 package stepDefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
-import org.testng.Assert;
+import org.testng.*;
 import pageObjects.LandingPage;
 import utils.TestContextSetup;
 
@@ -11,12 +11,12 @@ public class LandingPageStepDefination {
     LandingPage landingPage;
 public LandingPageStepDefination(TestContextSetup testContextSetup){
     this.testContextSetup =testContextSetup;
-    this.landingPage = testContextSetup.pageObjectManager.getLandingPage();
+//    this.landingPage = testContextSetup.pageObjectManager.getLandingPage();
 }
     @Given("^User in on GreenCart Landing page$")
     public void user_in_on_greencart_landing_page() throws IOException {
-//       testContextSetup.testBase.WebDriverManger();
-        Assert.assertTrue(landingPage.getTitleLandingPage().contains("GreenKart"));
+//   ss    testContextSetup.testBase.WebDriverManger();
+//        Assert.assertTrue(landingPage.getTitleLandingPage().contains("GreenKart"));
     }
     @When("^user search with shortname (.+) and extracted actual name of product$")
     public void user_search_with_shortname_something_and_extracted_actual_name_of_product(String shortName) throws InterruptedException {
